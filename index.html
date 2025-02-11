@@ -255,6 +255,105 @@
         width: 0;
         height: 0;
       }
+
+      /* Media Queries for Responsive Design */
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce base font size */
+  }
+  header,
+  footer,
+  main,
+  section,
+  article {
+    padding: 15px;
+  }
+  header,
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    width: 95%;
+  }
+  img {
+    width: 80%;
+  }
+  button,
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Further reduce base font size */
+  }
+  header,
+  footer,
+  main,
+  section,
+  article {
+    padding: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  img {
+    width: 90%;
+  }
+  button,
+  input,
+  textarea {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+/* For very small screens (320px and below) */
+@media (max-width: 320px) {
+  body {
+    font-size: 10px; /* Smallest base font size */
+  }
+  header,
+  footer,
+  main,
+  section,
+  article {
+    padding: 8px;
+  }
+  img {
+    width: 100%;
+  }
+  button,
+  input,
+  textarea {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
+      
     </style>
   </head>
   <body>
